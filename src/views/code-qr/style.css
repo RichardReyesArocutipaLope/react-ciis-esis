@@ -1,0 +1,69 @@
+.view_qr_container_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef3ef;
+}
+
+.view_qr_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  overflow: hidden;
+  height: auto;
+  width: 70%;
+  /* padding: 2%; */
+  /* height: 80%; */
+  box-shadow: 28px 20px 58px rgba(0, 0, 0, 0.2);
+}
+
+.view_qr_container_grid {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18em), 1fr));
+}
+
+.view_qr_form {
+  height: 100%;
+  /* width: 25rem; */
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: space-around; */
+  align-items: center;
+}
+
+.view_qr_form p {
+  font-size: 1.3rem;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 3rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: #312383 3px solid underline;
+  text-underline-position: under;
+}
+
+.view_qr_input {
+  margin-bottom: 30px;
+  font-size: large;
+  padding: 5px 25px 0 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: 2px solid #312383;
+  border: 0 outset;
+  height: 3.5rem;
+  width: 65%;
+  border-radius: 5px;
+}
+
+.view_qr_input::placeholder {
+  font-weight: 500;
+  font-size: 1.5rem;
+}

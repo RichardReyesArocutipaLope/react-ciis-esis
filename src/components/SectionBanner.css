@@ -1,0 +1,288 @@
+/**** MAIN BANNER ****/
+.main-banner__fondo {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 100;
+}
+
+.main-banner {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(0px) saturate(100%) contrast(130%) brightness(75%);
+}
+
+/* FLAGS */
+
+.flags_banner {
+  width: 50%;
+  padding: 0rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flag_icon_banner {
+  width: 3rem;
+  height: auto;
+}
+
+/****main title****/
+.main-title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 12vh;
+}
+
+.main-title h1 {
+  font-size: 4.1rem;
+  width: 80rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/*  */
+.main-logo__banner {
+  display: none;
+}
+
+/*  */
+
+.main-title span {
+  font-weight: 500;
+}
+
+.main-title span {
+  transition: transform 0.1s ease;
+}
+
+.main-title span:hover {
+  transform: translateY(-1rem);
+}
+
+/*  */
+.main-details {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+
+.main-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/*  */
+
+/*  */
+
+.main-info__container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.count-down-end {
+  color: white;
+}
+
+.main-info {
+  height: 16vh;
+  width: 45vw;
+  background-image: linear-gradient(180deg,
+      rgb(0 13 92) 0%,
+      rgb(0, 21, 160) 100%);
+  border-radius: 25vh;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-info__title-container {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-info__title {
+  color: white;
+}
+
+.main-info__title--main {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+}
+
+.main-datails__date {
+  text-align: center;
+}
+
+/* main message */
+
+.main-message__container {
+  margin-top: 1rem;
+}
+
+.main-message {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7rem;
+  width: 50rem;
+}
+
+/* redes sociales banner */
+
+.redes-sociales {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.redes-sociales a {
+  transition: transform 0.5s;
+  cursor: pointer;
+  color: white;
+  font-size: 3rem;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.1);
+}
+
+
+/*  */
+
+.contactanos__form-container .spinner{
+  font-size: 2rem;
+}
+
+.spinner {
+  height: 50px;
+  width: max-content;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: monospace;
+  color: #f5f5f5;
+  letter-spacing: .4rem;
+  filter: drop-shadow(0 0 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner span {
+  animation: loading6454 4.75s ease infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.spinner span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.spinner span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.spinner span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.spinner span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.spinner span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.spinner span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.spinner span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.spinner span:nth-child(10) {
+  animation-delay: 2.25s;
+}
+
+.spinner span:nth-child(11) {
+  animation-delay: 2.5s;
+}
+
+.spinner span:nth-child(12) {
+  animation-delay: 2.75s;
+}
+
+
+.spinner span:nth-child(13) {
+  animation-delay: 3s;
+}
+
+.spinner span:nth-child(14) {
+  animation-delay: 3.25s;
+}
+
+.spinner span:nth-child(15) {
+  animation-delay: 3.5s;
+}
+
+.spinner span:nth-child(16) {
+  animation-delay: 3.75s;
+}
+
+.spinner span:nth-child(17) {
+  animation-delay: 4s;
+}
+
+.spinner span:nth-child(18) {
+  animation-delay: 4.25s;
+}
+
+.spinner span:nth-child(19) {
+  animation-delay: 4.5s;
+}
+
+
+
+@keyframes loading6454 {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+

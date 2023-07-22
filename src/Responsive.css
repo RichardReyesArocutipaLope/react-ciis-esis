@@ -1,0 +1,685 @@
+/* RESPONSIVE */
+@media screen and (max-width: 3000px) {
+  html {
+    font-size: 18px;
+  }
+
+  .section-xl {
+    max-width: 1900px;
+  }
+
+  .section-l {
+    max-width: 1700px;
+  }
+
+  .modal-dialog {
+    width: 90rem;
+    max-width: 90rem;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  html {
+    font-size: 16px;
+  }
+
+  .section-xl {
+    max-width: 1600px;
+  }
+
+  .section-l {
+    max-width: 1400px;
+  }
+
+  .modal-dialog {
+    width: 70rem;
+    max-width: 70rem;
+  }
+
+  /* title */
+  .main-title h1 {
+    font-size: 3.9rem;
+  }
+
+  .main-details {
+    font-size: 1.8rem;
+  }
+
+  .main-message {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  html {
+    font-size: 13px;
+  }
+
+  .section-xl {
+    max-width: 1150px;
+  }
+
+  .section-l {
+    max-width: 1150px;
+  }
+
+  .calendar-day__grid {
+    padding: 0 1rem;
+  }
+
+  .calendar-day__grid--singap {
+    padding: 0 1rem;
+  }
+
+  .workshops-day__item {
+    width: 35rem;
+    max-width: 35rem;
+  }
+
+  .calendar-day__item {
+    width: 35rem;
+    max-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .section-l {
+    max-width: 900px;
+  }
+
+  .modal-dialog {
+    width: 60rem;
+    max-width: 60rem;
+  }
+
+  /* contador */
+  .main-info {
+    height: 15rem;
+    width: 50rem;
+  }
+
+  /* recaptcha */
+  .recaptcha {
+    transform: scale(0.8) translateY(-60%);
+    position: absolute;
+    top: 0;
+  }
+
+  .technology-fair {
+    max-width: 1200px !important;
+  }
+
+  /* logo esis */
+  .main-logo--unjbg {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .section-xl {
+    max-width: 700px;
+  }
+
+  /* title */
+  .main-title h1 {
+    font-size: 3.6rem;
+    width: 90%;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /*  */
+  /*  */
+  .section-details {
+    padding: 8vh 2rem;
+    gap: 6rem;
+    flex-direction: column;
+  }
+
+  .multimedia {
+    position: relative;
+    width: 90%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.4);
+  }
+
+  .section-details__description {
+    width: 90%;
+  }
+
+  /*  */
+
+  /*  */
+  .section-hackathon {
+    padding: 8vh 2rem;
+    flex-direction: column;
+  }
+
+  .section-hackathon__info {
+    width: 80%;
+  }
+
+  /*  */
+
+  /* contactanos */
+  .section-contactanos__container {
+    flex-direction: column;
+    height: 96rem;
+  }
+
+  .section-inscription {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .section-info {
+    width: 100%;
+    padding: 3rem;
+    flex-grow: 1;
+  }
+
+  /* lugar  */
+  .section-lugar__container {
+    min-height: calc(80rem + 48rem);
+  }
+
+  .inputs--re-enviar {
+    margin: 1rem;
+  }
+
+  .recaptcha {
+    transform: scale(0.7) translateY(-70%);
+    position: absolute;
+    top: 0;
+  }
+
+  /* contactanos */
+  .section-contactanos__wrapper {
+    height: calc(25rem + 96rem);
+  }
+
+  .questions {
+    top: -40rem;
+  }
+
+
+
+  /* FERIA TECNOLOGICA */
+  .technology-fair__day {
+    flex-direction: column;
+  }
+
+  .technology-fair__day-wrapper1 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .technology-fair__day-wrapper2 {
+    width: 36rem;
+    padding: 0;
+    transform: scale(.9);
+    display: flex;
+  }
+
+  .technology-fair__day:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .efe {
+    flex-direction: column;
+  }
+
+  .efe:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-contactanos .date__custom {
+    padding-right: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  html {
+    font-size: 11px;
+  }
+
+  .main-nav__item:last-child {
+    display: none;
+  }
+
+  .section-xl {
+    max-width: 790px;
+  }
+
+  .workshops-day__item {
+    width: 32rem;
+    max-width: 32rem;
+  }
+
+  .calendar-day__item {
+    width: 32rem;
+    max-width: 32rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* SECTION LUGAR */
+
+  /*  */
+
+  .section-xl {
+    max-width: 700px;
+  }
+
+  /* menu mobile */
+  .header-nav {
+    display: none;
+  }
+
+  .button-toggle {
+    display: block;
+  }
+
+  .button-toggle.active {
+    position: fixed;
+    z-index: 120;
+    inset: 2.5rem 2.5rem auto auto;
+  }
+
+  .active.button-toggle::after,
+  .active.button-toggle::before,
+  .active.linea-toggle {
+    background-color: white;
+  }
+
+  .nav-container__active {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 110;
+  }
+
+  .main-nav.nav-toggle__active {
+    width: 80%;
+    height: 100%;
+    background-image: url('../src/assets/background/banner-humo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15vh;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    height: 65vh;
+  }
+
+  .main-nav__item:first-child {
+    display: none;
+  }
+
+  .main-nav__item:last-child {
+    display: none;
+  }
+
+  .main-nav__item {
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 100%;
+  }
+
+  .main-nav__link {
+    font-size: 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-toggle__active .button__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 96);
+    font-size: 2rem;
+    height: 100%;
+    padding: 1rem 2rem;
+    position: initial;
+    transform: translateY(0%);
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(180deg,
+        rgb(255, 255, 255) 0%,
+        rgb(194, 194, 194) 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  /*  */
+
+  /*  */
+  .main-title h1 {
+    font-size: 2.8rem;
+    width: 30rem;
+  }
+
+  .main-title {
+    padding-top: 10vh;
+  }
+
+  .flags_banner {
+    width: 80%;
+  }
+
+  /*  */
+
+  /*  */
+  .space {
+    display: none;
+  }
+
+  /*  */
+
+  /* main info contador */
+  .main-info__container {
+    padding-bottom: 2rem;
+  }
+
+  .main-info {
+    height: 10rem;
+    width: 90vw;
+    padding: 2rem;
+    border-radius: 4rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-info__title-container {
+    width: 95%;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .main-info__title--main {
+    font-size: 1.5rem;
+  }
+
+  .date__custom {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .date__text {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /*  */
+
+  /*  */
+  .main-logo__banner {
+    display: block;
+    inset: 1rem auto auto 1rem;
+  }
+
+  .main-logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  /*  */
+
+  /* CONTACTANOS */
+
+  /* SECTION CONTACTANOS */
+  .section-contactanos__wrapper {
+    position: relative;
+    height: calc(80rem + 72rem);
+  }
+
+  /*  */
+
+  .section-inscription {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .section-info {
+    width: 100%;
+    padding: 3rem;
+    flex-grow: 1;
+  }
+
+  .section-contactanos {
+    padding: 0 2rem;
+  }
+
+  .section-contactanos__container {
+    flex-direction: column;
+    height: 115rem;
+  }
+
+  .section-contactanos .main-info__title-container {
+    width: 80%;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+
+  .section-contactanos .date__custom {
+    padding-right: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .section-contactanos .date__text {
+    padding-right: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .section-contactanos .main-info {
+    height: 9rem;
+  }
+
+  .contactanos__form {
+    flex-direction: column;
+  }
+
+  .section-contactanos .main-info {
+    padding: 1rem;
+  }
+
+  .input_container_row {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+
+  .inputs--re-enviar {
+    margin: 2rem;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .input__container--center {
+    position: relative;
+  }
+
+  .recaptcha {
+    transform: scale(0.7) translateY(-70%);
+    position: absolute;
+    top: 0;
+  }
+
+  /* auspiciadores */
+  .section-auspiciadores {
+    padding: 4rem 0;
+  }
+
+  .auspiciadores__link {
+    width: 45%;
+    height: 14rem;
+  }
+
+  /* SPEAKERS */
+  .speakers_grid_container_main {
+    padding: 0 3rem;
+  }
+
+  /* THEMES */
+  .theme__title {
+    font-size: 1.9rem;
+  }
+
+  .theme__description {
+    font-size: 1.2rem;
+    overflow-y: auto;
+  }
+
+  /* LUGAR */
+  .section-lugar__container {
+    min-height: calc(60rem + 84rem);
+  }
+
+  /*  */
+  .questions {
+    top: -50rem;
+  }
+
+  .question__card {
+    height: 20rem;
+  }
+
+  /* modal speaker */
+  .modal-dialog {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  /* main-mesage */
+  .main-message {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  /*Calendar item  */
+
+  .calendar-nav__link {
+    width: 12.5rem;
+    height: 5rem;
+  }
+
+  .workshops-nav__link {
+    width: 12.5rem;
+    height: 5rem;
+  }
+
+  .section-workshops__background {
+    padding: 6vh 3vh;
+  }
+
+  .workshops-day__item {
+    width: 95%;
+    max-width: 95%;
+  }
+
+  .calendar-day__item {
+    width: 95%;
+    max-width: 95%;
+    height: 22rem;
+  }
+
+  .calendar-day__description-container {
+    height: 72%;
+  }
+
+  .calendar-day__grid--singap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+    padding: 0;
+  }
+
+  .calendar-day__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+
+  .calendar-day__ponencias {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .calendar-day__talleres {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: 4rem;
+  }
+
+  /* theme */
+  .theme {
+    height: 32rem;
+  }
+
+  /* ELCONGRES EMPEZO */
+  .contactanos__form-container .spinner{
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+  }
+  
+  .spinner {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+  }
+
+  .multimedia--streaming{
+    width: 100%;
+}
+.multimedia__media--streaming{
+  width: 100%;
+  height: 28rem;
+}
+
+
+}
+
+@media screen and (max-width: 370px) {
+  .main-message {
+    font-size: 1.1rem;
+  }
+  /* EL CONGRESO EMPEZO */
+  .spinner {
+    font-size: 1.8rem;
+    letter-spacing: .3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* THEMES */
+  .theme {
+    width: 30rem;
+    max-width: 30rem;
+  }
+}

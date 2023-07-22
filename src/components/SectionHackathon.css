@@ -1,0 +1,42 @@
+.section-hackathon__container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background/background-image-white.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-hackathon {
+  padding: 10vh 8vh;
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-hackathon__info {
+  width: 100%;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+.section-hackathon__title {
+  font-size: 2.4rem;
+  color: rgb(250 3 104);
+  margin: 0.5rem 0 1rem 0;
+}
+.section-hackathon__description {
+  font-size: 1.1rem;
+  text-align: justify;
+  color: rgb(79, 79, 79);
+  line-height: 1.5rem;
+  text-align: justify;
+}
+.section-hackathon__event {
+  font-size: 1.8rem;
+  color: rgb(79, 79, 79);
+  margin: 0.5rem 0 1rem 0;
+  margin-top: 2rem;
+}

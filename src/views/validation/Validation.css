@@ -1,0 +1,138 @@
+.validation_container_main {
+  background-color: #2b2c3e;
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.validation_container_flex {
+  /* margin-bottom: 10%; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* align-items: center; */
+}
+
+.validation__title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 1.2rem;
+  gap: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.validation__title h1 {
+  justify-self: left;
+}
+
+.validation__xxiii {
+  font-weight: bold;
+}
+
+.validation__post {
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+.validation__lined {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #9013fe;
+  align-self: center;
+}
+
+.validation p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  font-weight: 100;
+  color: #b169f0;
+  letter-spacing: 0.1rem;
+}
+
+.validation__p {
+  color: #bdbdbd;
+  font-size: 1.3rem;
+}
+
+.validation__form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #8d8d8d;
+}
+
+.validation__form h2 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.validation__form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.validation__form form span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.validation__input {
+  width: 250px;
+  background-color: transparent;
+  color: #8d8d8d;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  /* width: 100%; */
+}
+
+.validation__input--error {
+  border-color: red;
+}
+
+.validation__input:focus {
+  outline: none;
+  background-color: #3d3f55;
+}
+
+.validation__submit {
+  width: 100%;
+  background-color: #8d8d8d;
+  color: #2b2c3d;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  width: 80%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.validation__submit:hover {
+  background-color: #622a97;
+  border: 1px solid #622a97;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.validation__submit--error {
+  border-color: red;
+}

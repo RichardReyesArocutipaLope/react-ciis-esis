@@ -1,0 +1,232 @@
+.section-themes__container {
+    min-height: 100vh;
+    background-image: url('../assets//background/banner-public.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}
+
+.section-themes__overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #190067 0%, #2A07F9 100%);
+    opacity: .5;
+}
+
+.section-themes {
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.theme {
+    height: 26rem;
+    width: 23REM;
+    max-width: 23REM;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: .4rem;
+    box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+}
+
+.theme::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(240, 240, 240);
+    transform: scaleX(0);
+    transition: transform .4s;
+    z-index: 20;
+}
+
+.theme:hover::after {
+    transform: scaleX(1);
+}
+
+.theme::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgb(255 168 0);
+    top: 99%;
+    left: 0;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+.naranja::before{
+    background-color: rgb(255 168 0);
+}
+.celeste::before{
+    background-color: rgb(15  181  218);
+}
+.verde::before{
+    background-color: rgb(39  212  88);
+}
+.rosado::before{
+    background-color: rgb(255  60  119);
+}
+.morado::before{
+    background-color: rgb(51, 0, 84);
+}
+.rojo::before{
+    background-color: rgb(161, 0, 0);
+}
+.cafe::before{
+    background-color: rgb(77, 59, 24);
+}
+.amarillo::before{
+    background-color: rgb(170, 144, 0);
+}
+.gris::before{
+    background-color: rgb(42, 42, 42);
+}
+.azul::before{
+    background-color: rgb(18, 0, 215);
+}
+
+
+.theme__description{
+    text-align: justify;
+}
+
+.theme:hover::before {
+    top: 0;
+}
+
+.theme__style {
+    position: relative;
+    z-index: 10;
+    transition: color .2s;
+}
+
+.theme:hover .theme__title {
+    color: rgb(240, 240, 240);
+}
+
+.theme:hover .theme__description {
+    color: rgb(240, 240, 240);
+}
+
+/* REVISAR THEME ICON  */
+.theme:hover .theme__icon {
+    filter: brightness(0) invert(1);
+    animation-name: toTopFromBottom;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.theme__icon {
+    font-size: 4rem;
+    color: rgb(255 168 0);
+    transition: all .2s ease-in-out;
+}
+
+.naranja-color{
+    color: rgb(255 168 0);
+}
+.celeste-color{
+    color: rgb(15  181  218);
+}
+.verde-color{
+    color: rgb(39  212  88);
+}
+.rosado-color{
+    color: rgb(255  60  119);
+}
+.morado-color{
+    color: rgb(51, 0, 84);
+}
+.rojo-color{
+    color: rgb(161, 0, 0);
+}
+.cafe-color{
+    color: rgb(77, 59, 24);
+}
+.amarillo-color{
+    color: rgb(170, 144, 0);
+}
+.gris-color{
+    color: rgb(42, 42, 42);
+}
+.azul-color{
+    color: rgb(18, 0, 215);
+}
+
+
+@keyframes toTopFromBottom {
+    49% {
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -moz-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        -o-transform: translateY(50%);
+        transform: translateY(50%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
+.theme__title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgb(60, 60, 60);
+}
+
+.theme__description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+}
+/* =)==============================00 */
+.section-themes__title h2{
+    padding: 5vh 0;
+    color: white;
+    position: relative;
+    z-index: 20;
+    text-align: center;
+    font-size: 2.8rem;
+}
+.section-themes__description{
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 60%;
+    margin: 0 auto;
+}

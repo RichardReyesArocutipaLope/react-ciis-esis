@@ -1,0 +1,272 @@
+/****Header****/
+.header {
+  inset: 0 auto auto 0;
+  position: absolute;
+  height: 4rem;
+  width: 100%;
+}
+.header-nav {
+  height: 100%;
+  position: relative;
+  z-index: 110;
+}
+.main-nav {
+  height: 100%;
+}
+.main-nav__list {
+  padding-top: 1rem;
+  gap: 0.8rem;
+  height: 100%;
+  justify-content: center;
+}
+.main-nav__item {
+  position: relative;
+}
+.main-nav__link {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
+.main-nav__link:hover {
+  color: white;
+}
+.main-nav__link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.main-nav__link:not(.main-nav__link--inscrip):hover::after {
+  transform: scaleX(1);
+}
+
+.button__link {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 500;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0 13 92) 0%,
+    rgb(0, 21, 160) 100%
+  );
+  border-radius: 0.4rem;
+  transform: translateY(-40%);
+  left: 3rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.button__link::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+  top: 100%;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.button__link:hover {
+  color: rgb(32 30 127);
+}
+.button__link:hover::before {
+  top: 0;
+}
+.button__link--relative {
+  position: relative;
+  transform: translateY(0%);
+  left: 0rem;
+  font-size: 1.3rem;
+  width: 14rem;
+  padding: 1.1rem 1.5rem;
+}
+
+.button__link--primary {
+  background-color: rgb(34, 125, 162);
+}
+.button__link--primary:hover {
+  color: rgb(34, 125, 162);
+}
+.button__link--primary::before {
+  background-color: rgb(240, 240, 240);
+}
+
+.button__link--secondary {
+  background-image: linear-gradient(180deg, #3c4580 0%, #3c4580 100%);
+}
+.button__link--secondary:hover {
+  color: #3c4580;
+  /* color: ; */
+}
+.button__link--secondary::before {
+  background-color: rgb(240, 240, 240);
+}
+
+.button__link--pink {
+  background-color: #fa0368;
+}
+.button__link--pink:hover {
+  color: #fa0368;
+}
+.button__link--pink::before {
+  background-color: rgb(240, 240, 240);
+}
+/*  */
+.button--details {
+  position: absolute;
+  border: none;
+  width: 3.1rem;
+  height: 3.1rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  transform: translateY(-40%);
+  left: 5rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button--details > span {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  overflow: hidden;
+}
+.button--details .button__row {
+  display: block;
+  height: 0.3rem;
+  margin: 0.3rem 0;
+  border-radius: 0.2rem;
+  width: 100%;
+  background-color: rgb(135 14 151);
+  transition: all 0.3s ease-in-out;
+}
+.button--details .button__row:last-child {
+  transform: translateX(30%);
+}
+
+.button--details:hover .button__row:first-child {
+  transform: translateX(30%);
+}
+.button--details:hover .button__row:last-child {
+  transform: translateX(0%);
+}
+
+/****logo****/
+.main-logo {
+  position: absolute;
+  width: 13vh;
+  height: 13vh;
+  inset: -1.5rem 3rem auto auto;
+  z-index: 30;
+  filter: brightness(200%);
+}
+
+.arrow-up {
+  position: fixed;
+  background-color: rgb(250, 250, 250);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 2rem;
+  font-size: 3rem;
+  left: 2rem;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: rgb(23 3 144);
+  z-index: 90;
+  /* animation-name: subir;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite; */
+}
+.arrow-up svg {
+  display: block;
+}
+/* @keyframes subir {
+  0%{
+    transform: scale(1) translateY(0);
+  }
+
+  100%{
+    transform: scale(1.05) translateY(-10%);
+  }
+} */
+
+/**** menu-toggle-NO MODIFICADO ****/
+.button-toggle {
+  height: 3rem;
+  width: 3.5rem;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  inset: 2.5rem 2.5rem auto auto;
+  z-index: 110;
+}
+.button-toggle::after,
+.button-toggle::before,
+.linea-toggle {
+  content: '';
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 6px;
+  position: absolute;
+  transition: transform 0.7s, bottom 0.5s, top 0.5s;
+}
+.button-toggle::after {
+  bottom: 0;
+}
+.linea-toggle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-toggle::before {
+  top: 0;
+}
+.button-toggle.active::after {
+  transform: translateY(50%) rotate(-45deg);
+  bottom: 50%;
+}
+.button-toggle.active::before {
+  transform: translateY(-50%) rotate(45deg);
+  top: 50%;
+}
+.button-toggle.active .linea-toggle {
+  transform: scale(10%);
+}
+/*  */
+
+/* LOGO UNJBG */
+.main-logo--unjbg{
+  position: absolute;
+  width: 14.2vh;
+  height: 13vh;
+  inset: -1.2rem auto auto 3rem ;
+  z-index: 30;
+  filter:invert(1);
+}
+.main-logo__img--unjbg{
+  transform: scale(1.1);
+}
